@@ -93,4 +93,13 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    public function actionHello()
+    {
+        $param = 'Параметр';
+        $val   = 45;
+        //return $this->render('hello',array('param'=>$param, 'val'=>$val));
+        return $this->render('hello',$param);
+    }
+
 }
